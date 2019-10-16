@@ -1,0 +1,33 @@
+Component configuration:
+
+    - atomic                   : building
+    - chrono                   : building
+    - container                : not building
+    - context                  : building
+    - contract                 : not building
+    - coroutine                : building
+    - date_time                : building
+    - exception                : building
+    - fiber                    : not building
+    - filesystem               : building
+    - graph                    : building
+    - graph_parallel           : building
+    - headers                  : not building
+    - iostreams                : building
+    - locale                   : building
+    - log                      : building
+    - math                     : building
+    - mpi                      : building
+    - program_options          : building
+    - python                   : building
+    - random                   : building
+    - regex                    : building
+    - serialization            : building
+    - stacktrace               : not building
+    - system                   : building
+    - test                     : building
+    - thread                   : building
+    - timer                    : building
+    - type_erasure             : not building
+    - wave                     : building
+
