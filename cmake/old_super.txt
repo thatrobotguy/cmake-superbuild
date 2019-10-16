@@ -6,12 +6,11 @@ set (DEPENDENCIES)
 set (EXTRA_CMAKE_ARGS)
 
 # Use static linking to avoid issues with system-wide installations of Boost.
-# i am not including "iostreams" as it requires bzip2 "Julian Seward" and the website for it is currently not working
 list (APPEND DEPENDENCIES ep_boost)
 ExternalProject_Add (ep_boost
   URL http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.bz2/download
   URL_MD5 d6eef4b4cacb2183f2bf265a5a03a354
-  CONFIGURE_COMMAND ./bootstrap.sh --with-libraries=atomic,date_time,filesystem,program_options,system,thread,chrono,context,coroutine,exception,graph,graph_parallel,locale,log,math,mpi,random,python,regex,serialization,signals,test,timer,wave
+  CONFIGURE_COMMAND ./bootstrap.sh --with-libraries=atomic,date_time,filesystem,program_options,system,thread
   BUILD_COMMAND ./b2 link=static
   BUILD_IN_SOURCE 1
   INSTALL_COMMAND ""
