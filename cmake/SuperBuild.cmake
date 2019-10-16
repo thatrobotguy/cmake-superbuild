@@ -22,7 +22,8 @@ ExternalProject_Add (ep_boost
   # URL_MD5 d73a8da01e8bf8c7eda40b4c84915071a8c8a0df4a6734537ddde4a8580524ee
   # I got the hash below from simply copying it from the terminal since I could not find it elsewhere.
   URL_MD5 4cdf9b5c2dc01fb2b7b733d5af30e558
-  CONFIGURE_COMMAND ./bootstrap.sh --with-libraries=atomic,date_time,filesystem,program_options,system,thread,chrono,context,coroutine,exception,graph,graph_parallel,locale,log,math,mpi,random,python,regex,serialization,signals,test,timer,wave
+  #CONFIGURE_COMMAND ./bootstrap.sh --with-libraries=atomic,date_time,filesystem,program_options,system,thread,chrono,context,coroutine,exception,graph,graph_parallel,locale,log,math,mpi,random,python,regex,serialization,signals,test,timer,wave
+  CONFIGURE_COMMAND ./bootstrap.sh --with-libraries=atomic,date_time,filesystem,program_options,system,thread,chrono,context,coroutine,exception,graph,graph_parallel,locale,log,math,mpi,random,python,regex,serialization,iostreams,test,timer,wave
   BUILD_COMMAND ./b2 link=static
   BUILD_IN_SOURCE 1
   INSTALL_COMMAND ""
